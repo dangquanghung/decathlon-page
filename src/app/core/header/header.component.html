@@ -1,0 +1,69 @@
+<nav class="bg-white-200 p-4 flex items-center justify-between">
+  <div class="flex">
+    <img
+      routerLink=""
+      src="assets\img\decathlon-logo.png"
+      alt=""
+      width="210"
+      height=""
+    />
+  </div>
+  <div class="flex items-center">
+    <ul class="flex space-x-4">
+      <li class="flex flex-col items-center">
+        <fa-icon icon="rocket"></fa-icon>
+        <a routerLink="/progress" class="text-gray-700 hover:text-gray-900"
+          >Progress</a
+        >
+      </li>
+      <li class="flex flex-col items-center">
+        <fa-icon icon="book"></fa-icon>
+        <a routerLink="/explore" class="text-gray-700 hover:text-gray-900"
+          >Explore</a
+        >
+      </li>
+      <li class="flex flex-col items-center">
+        <fa-icon icon="square-plus"></fa-icon>
+        <a routerLink="/create" class="text-gray-700 hover:text-gray-900"
+          >Create</a
+        >
+      </li>
+      <li class="flex flex-col items-center">
+        <fa-icon icon="chart-line"></fa-icon>
+        <a routerLink="/analysis" class="text-gray-700 hover:text-gray-900"
+          >Analysis</a
+        >
+      </li>
+    </ul>
+    <div class="ml-5">
+      <input
+        type="text"
+        placeholder="Search"
+        class="border border-gray-400 px-2 py-1 rounded-lg w-96"
+      />
+    </div>
+  </div>
+  <div class="flex items-center ml-2.5">
+    <a href="#" class="flex items-center text-gray-700 hover:text-gray-900">
+      <div
+        class="rounded-full bg-yellow-500 text-white flex items-center justify-center w-6 h-6"
+      >
+        ?
+      </div>
+    </a>
+    <a href="#" class="flex items-center ml-5">
+      <div
+        class="rounded-full bg-yellow-500 text-white flex items-center justify-center w-6 h-6"
+      >
+        <fa-icon icon="bell" class="fa-solid"></fa-icon>
+      </div>
+    </a>
+    <div class="ml-5">
+      <div
+        class="rounded-full bg-yellow-500 text-white flex items-center justify-center w-6 h-6"
+      >
+        <fa-icon icon="user"></fa-icon>
+      </div>
+    </div>
+  </div>
+</nav>
