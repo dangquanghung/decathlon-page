@@ -61,8 +61,31 @@
     <div class="ml-5">
       <div
         class="rounded-full bg-yellow-500 text-white flex items-center justify-center w-6 h-6"
+        (click)="userPopup($event)"
       >
-        <fa-icon icon="user"></fa-icon>
+        <div class="flex items-center">
+          <button
+            mat-icon-button
+            [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu"
+          >
+            <fa-icon icon="user"></fa-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>content_paste</mat-icon>
+              <span>My contents</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>pending_actions</mat-icon>
+              <span>My activity</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>analytics</mat-icon>
+              <span>My research</span>
+            </button>
+          </mat-menu>
+        </div>
       </div>
     </div>
   </div>
