@@ -1,5 +1,7 @@
 .flex-grow {
-    position: relative;
-    height: 700px;
-    margin-top: 10em;
+  position: relative;
+  height: 650px;
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
 }
