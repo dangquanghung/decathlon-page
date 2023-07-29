@@ -6,6 +6,8 @@ import { CreationComponent } from './creation/creation.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { FeaturesRoutingModule } from './features-routing.module';
 
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     ProgressionComponent,
@@ -13,7 +15,7 @@ import { FeaturesRoutingModule } from './features-routing.module';
     CreationComponent,
     AnalysisComponent,
   ],
-  imports: [CommonModule, FeaturesRoutingModule],
+  imports: [CommonModule, FeaturesRoutingModule, MatIconModule],
   exports: [
     ProgressionComponent,
     ExplorationComponent,
